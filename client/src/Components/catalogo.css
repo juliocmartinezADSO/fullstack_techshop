@@ -1,0 +1,26 @@
+/* MiComponente.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas automáticas con un ancho mínimo de 300px */
+  grid-gap: 20px; /* Espacio entre elementos */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  padding: 20px; /* Espaciado exterior para mayor legibilidad en dispositivos pequeños */
+}
+
+.grid-item {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para dispositivos con un ancho máximo de 768px */
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cambia el ancho mínimo a 250px */
+  }
+}
+  
