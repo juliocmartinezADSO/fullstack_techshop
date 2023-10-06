@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/logo.png";
 function NavBar() {
   return (
@@ -49,6 +51,13 @@ function NavBar() {
             </li>
           </ul>
           <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/cart">
+                <FontAwesomeIcon icon={faShoppingCart} /> Cart{" "}
+                {/* Icono y etiqueta "Cart" */}
+                
+              </Link>
+            </li>
             <NavItem link="/login" label="Login" />
             <NavItem link="/register" label="Register" />
           </ul>

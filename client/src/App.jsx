@@ -12,7 +12,8 @@ import { Provider, useSelector } from "react-redux";
 import store from "./redux/store";
 import Servicios from "./Components/Servicios";
 import CrearProducto from "./Components/CrearProducto";
-import Catalogo from "./Components/Catalogo";
+import Products from "./Components/Products";
+import Cart from "./Components/Cart";
 
 
 function App() {
@@ -23,10 +24,12 @@ function App() {
           <NavBar />
           <Switch>
             {/* <Route path="/" element={<NavBar/>}/> */}
+            <Route path="/" element={<Products />} />
+            <Route path="/catalogo" element={<Products />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/catalogo" element={<Catalogo />} />
             <Route path="/productos" element={<CrearProducto />}/>
+            
           </Switch>
         </Router>
       </div>

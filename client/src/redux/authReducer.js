@@ -1,6 +1,8 @@
 const initialState = {
     token: null,
-    isAuthenticated:false
+    isAuthenticated:false,
+    basket: [],
+    user: null,
   };
   
   const reducer = (state = initialState, action) => {
